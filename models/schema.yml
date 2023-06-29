@@ -5,37 +5,37 @@ models:
     columns:
       - name: Date
         tests:
-          - dbt_macro.test_nullable
+          - test_column_value
       - name: Code
         tests:
-          - dbt_macro.test_nullable
+          - test_column_value
       - name: Number
         tests:
-          - dbt_macro.test_nullable
+          - test_column_value
       - name: Origin
         tests:
-          - dbt_macro.test_nullable
+          - test_column_value
       - name: Destination
         tests:
-          - dbt_macro.test_nullable
+          - test_column_value
       - name: Departure Time
         tests:
-          - dbt_macro.test_nullable
+          - test_column_value
       - name: Departure Delay
         tests:
-          - dbt_macro.test_nullable
+          - test_column_value
       - name: Arrival Time
         tests:
-          - dbt_macro.test_nullable
+          - test_column_value
       - name: Arrival Delay
         tests:
-          - dbt_macro.test_nullable
+          - test_column_value
       - name: Flight Time
         tests:
-          - dbt_macro.test_nullable
+          - test_column_value
       - name: Distance
         tests:
-          - dbt_macro.test_nullable
+          - test_column_value
       - name: Record ID
         tests:
-          - dbt_macro.test_nullable
+          - test_column_value
