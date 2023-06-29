@@ -2,7 +2,7 @@
 version: 2
 
 models:
-  - name: flights_target
+  - name: flight
     columns:
       - name: Date
         tests:
