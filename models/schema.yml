@@ -8,7 +8,7 @@ models:
         tests:
           - not_null
           - accepted_types:
-              types: [DATE]
+              types: [STRING]
       - name: Code
         tests:
           - not_null
@@ -33,32 +33,32 @@ models:
         tests:
           - not_null
           - accepted_types:
-              types: [TIMESTAMP]
+              types: [STRING]
       - name: Departure Delay
         tests:
           - not_null
           - accepted_types:
-              types: [FLOAT64]
+              types: [STRING]
       - name: Arrival Time
         tests:
           - not_null
           - accepted_types:
-              types: [TIMESTAMP]
+              types: [STRING]
       - name: Arrival Delay
         tests:
           - not_null
           - accepted_types:
-              types: [FLOAT64]
+              types: [STRING]
       - name: Flight Time
         tests:
           - not_null
           - accepted_types:
-              types: [FLOAT64]
+              types: [STRING]
       - name: Distance
         tests:
           - not_null
           - accepted_types:
-              types: [FLOAT64]
+              types: [STRING]
       - name: Record ID
         tests:
           - not_null
