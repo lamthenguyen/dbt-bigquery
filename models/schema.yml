@@ -5,37 +5,37 @@ models:
     columns:
       - name: Date
         tests:
-          - test_column_value
+          - column_value
       - name: Code
         tests:
-          - test_column_value
+          - column_value
       - name: Number
         tests:
-          - test_column_value
+          - column_value
       - name: Origin
         tests:
-          - test_column_value
+          - column_value
       - name: Destination
         tests:
-          - test_column_value
+          - column_value
       - name: Departure Time
         tests:
-          - test_column_value
+          - column_value
       - name: Departure Delay
         tests:
-          - test_column_value
+          - column_value
       - name: Arrival Time
         tests:
-          - test_column_value
+          - column_value
       - name: Arrival Delay
         tests:
-          - test_column_value
+          - column_value
       - name: Flight Time
         tests:
-          - test_column_value
+          - column_value
       - name: Distance
         tests:
-          - test_column_value
+          - column_value
       - name: Record ID
         tests:
-          - test_column_value
+          - column_value
