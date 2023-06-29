@@ -5,37 +5,37 @@ models:
     columns:
       - name: Date
         tests:
-          - column_value
+          - not_null
       - name: Code
         tests:
-          - column_value
+          - not_null
       - name: Number
         tests:
-          - column_value
+          - not_null
       - name: Origin
         tests:
-          - column_value
+          - not_null
       - name: Destination
         tests:
-          - column_value
+          - not_null
       - name: Departure Time
         tests:
-          - column_value
+          - not_null
       - name: Departure Delay
         tests:
-          - column_value
+          - not_null
       - name: Arrival Time
         tests:
-          - column_value
+          - not_null
       - name: Arrival Delay
         tests:
-          - column_value
+          - not_null
       - name: Flight Time
         tests:
-          - column_value
+          - not_null
       - name: Distance
         tests:
-          - column_value
+          - not_null
       - name: Record ID
         tests:
-          - column_value
+          - not_null
