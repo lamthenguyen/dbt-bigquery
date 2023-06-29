@@ -1,0 +1,66 @@
+# schema.yml
+version: 2
+
+models:
+  - name: flights_target
+    columns:
+      - name: Date
+        tests:
+          - not_null
+          - accepted_types:
+              types: [DATE]
+      - name: Code
+        tests:
+          - not_null
+          - accepted_types:
+              types: [STRING]
+      - name: Number
+        tests:
+          - not_null
+          - accepted_types:
+              types: [STRING]
+      - name: Origin
+        tests:
+          - not_null
+          - accepted_types:
+              types: [STRING]
+      - name: Destination
+        tests:
+          - not_null
+          - accepted_types:
+              types: [STRING]
+      - name: Departure Time
+        tests:
+          - not_null
+          - accepted_types:
+              types: [TIMESTAMP]
+      - name: Departure Delay
+        tests:
+          - not_null
+          - accepted_types:
+              types: [FLOAT64]
+      - name: Arrival Time
+        tests:
+          - not_null
+          - accepted_types:
+              types: [TIMESTAMP]
+      - name: Arrival Delay
+        tests:
+          - not_null
+          - accepted_types:
+              types: [FLOAT64]
+      - name: Flight Time
+        tests:
+          - not_null
+          - accepted_types:
+              types: [FLOAT64]
+      - name: Distance
+        tests:
+          - not_null
+          - accepted_types:
+              types: [FLOAT64]
+      - name: Record ID
+        tests:
+          - not_null
+          - accepted_types:
+              types: [STRING]
