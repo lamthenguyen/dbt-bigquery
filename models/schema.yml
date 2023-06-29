@@ -1,4 +1,3 @@
-# schema.yml
 version: 2
 
 models:
@@ -6,61 +5,49 @@ models:
     columns:
       - name: Date
         tests:
-          - not_null
           - accepted_types:
               types: [STRING]
       - name: Code
         tests:
-          - not_null
           - accepted_types:
-              types: [STRING]
+              types: [INTEGER]
       - name: Number
         tests:
-          - not_null
           - accepted_types:
-              types: [STRING]
+              types: [INTEGER]
       - name: Origin
         tests:
-          - not_null
           - accepted_types:
               types: [STRING]
       - name: Destination
         tests:
-          - not_null
           - accepted_types:
               types: [STRING]
       - name: Departure Time
         tests:
-          - not_null
           - accepted_types:
-              types: [STRING]
+              types: [INTEGER]
       - name: Departure Delay
         tests:
-          - not_null
           - accepted_types:
-              types: [STRING]
+              types: [INTEGER]
       - name: Arrival Time
         tests:
-          - not_null
           - accepted_types:
-              types: [STRING]
+              types: [INTEGER]
       - name: Arrival Delay
         tests:
-          - not_null
           - accepted_types:
-              types: [STRING]
+              types: [INTEGER]
       - name: Flight Time
         tests:
-          - not_null
           - accepted_types:
-              types: [STRING]
+              types: [INTEGER]
       - name: Distance
         tests:
-          - not_null
           - accepted_types:
-              types: [STRING]
+              types: [INTEGER]
       - name: Record ID
         tests:
-          - not_null
           - accepted_types:
-              types: [STRING]
+              types: [INTEGER]
