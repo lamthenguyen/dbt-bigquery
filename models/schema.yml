@@ -4,14 +4,17 @@ models:
   - name: flights_data_mart
     columns:
       - name: Date
+        tests:
+          - not_null
       - name: Code
+        tests:
+          - not_null
       - name: Number
+        tests:
+          - not_null
       - name: Origin
+        tests:
+          - not_null
       - name: Destination
-      - name: Departure Time
-      - name: Departure Delay
-      - name: Arrival Time
-      - name: Arrival Delay
-      - name: Flight Time
-      - name: Distance
-      - name: Record ID
+        tests:
+          - not_null
