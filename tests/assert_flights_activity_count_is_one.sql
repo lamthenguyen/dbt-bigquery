@@ -10,5 +10,4 @@ having
     fail(
         'Expected activity_count to be 0 or 1, but found '
         || activity_count
-        || ' records'
-    )
+        || ' records')
