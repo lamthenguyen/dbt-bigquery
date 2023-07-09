@@ -3,6 +3,6 @@ version: 2
 models:
   - name: flights_activity_count
     tests:
-      - name: assert_activity_count_is_one
-        expect:
-          - condition: activity_count = 1
+      - assert_activity_count_is_one:
+          expect:
+            - condition: activity_count = 1
