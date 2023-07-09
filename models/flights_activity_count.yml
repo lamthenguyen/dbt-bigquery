@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: your_project_name.flights_activity_count
+    tests:
+      - name: assert_activity_count_is_one
+        severity: error
+        unique: true
+        expect:
+          - condition: activity_count = 1
