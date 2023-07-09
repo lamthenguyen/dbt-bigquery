@@ -5,4 +5,4 @@ with
 
 select count
 from activity_count
-where count <> 1
+where count = 1
