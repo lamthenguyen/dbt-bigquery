@@ -1,16 +1,14 @@
 version: 2
 
-seeds:
+sources:
   - name: flights
-    quoting: doublequote
-    delimiter: ","
-    file_format:
-      csv:
-        delimiter: ","
-        skip_rows: 1
-        quote_character: '"'
-        allow_quoted_newlines: false
+    schema: flights
+    loader: Cloud Storage
+
     tables:
       - name: flights
-        schema: flights
-        location: 'gs://etl-airflow-bigquey/flights.csv'
+        external:
+          location: "gs://etl-airflow-bigquey/flights.csv"
+          options:
+            format: csv
+            skip_leading_rows: 1
