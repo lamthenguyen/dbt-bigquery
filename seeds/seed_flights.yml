@@ -1,45 +1,16 @@
-# seed_flights.yml
-
 version: 2
 
 seeds:
   - name: flights
-    files:
-      - path: gs://etl-airflow-bigquey/extract_flights_sample.csv
-    columns:
-      - name: date
-        tests:
-          - not_null
-      - name: airline_code
-        tests:
-          - not_null
-      - name: flight_number
-        tests:
-          - not_null
-      - name: origin
-        tests:
-          - not_null
-      - name: destination
-        tests:
-          - not_null
-      - name: departure_time
-        tests:
-          - not_null
-      - name: departure_delay
-        tests:
-          - not_null
-      - name: arrival_time
-        tests:
-          - not_null
-      - name: arrival_delay
-        tests:
-          - not_null
-      - name: airtime
-        tests:
-          - not_null
-      - name: distance
-        tests:
-          - not_null
-      - name: flight_code
-        tests:
-          - not_null
+    quoting: doublequote
+    delimiter: ","
+    file_format:
+      csv:
+        delimiter: ","
+        skip_rows: 1
+        quote_character: '"'
+        allow_quoted_newlines: false
+    tables:
+      - name: flights
+        schema: my_schema
+        location: gs://etl-airflow-bigquey/extract_flights_sample.csv
