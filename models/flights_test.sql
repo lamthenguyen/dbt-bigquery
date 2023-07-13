@@ -2,7 +2,7 @@
 
 {{ config(
     pre_hook="""
-        CREATE OR REPLACE TABLE `my_project.my_dataset.flights_test` AS
+        CREATE OR REPLACE TABLE `my-project-95615-388109.my_first_bigquery.flights_test` AS
         SELECT *
         FROM `gs://etl-airflow-bigquey/flights.csv` AS t
     """
