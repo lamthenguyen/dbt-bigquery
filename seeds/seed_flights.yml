@@ -6,7 +6,8 @@ sources:
       - name: flights
         loaded_at_field: loaded_at
         description: "Your table description"
-        quoting: "DOUBLE_QUOTE"
+        quoting:
+          identifier: DOUBLE_QUOTE
         schema: my-project-95615-388109.my_first_bigquery
         source_data:
           tables:
