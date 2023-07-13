@@ -1,0 +1,43 @@
+# seed_flights.yml
+
+version: 2
+
+seeds:
+  - name: flights
+    columns:
+      - name: date
+        tests:
+          - not_null
+      - name: airline_code
+        tests:
+          - not_null
+      - name: flight_number
+        tests:
+          - not_null
+      - name: origin
+        tests:
+          - not_null
+      - name: destination
+        tests:
+          - not_null
+      - name: departure_time
+        tests:
+          - not_null
+      - name: departure_delay
+        tests:
+          - not_null
+      - name: arrival_time
+        tests:
+          - not_null
+      - name: arrival_delay
+        tests:
+          - not_null
+      - name: airtime
+        tests:
+          - not_null
+      - name: distance
+        tests:
+          - not_null
+      - name: flight_code
+        tests:
+          - not_null
