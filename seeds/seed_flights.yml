@@ -1,12 +1,13 @@
 version: 2
 
 sources:
-  - name: flights
-    loader: Cloud Storage
+  - name: flights_source
     tables:
       - name: flights
-        external:
-          location: "gs://etl-airflow-bigquey/flights.csv"
-          options:
-            format: csv
-            skip_leading_rows: 1
+        loaded_at_field: loaded_at
+        description: "Your table description"
+        quoting: "DOUBLE_QUOTE"
+        schema: my-project-95615-388109.my_first_bigquery
+        source_data:
+          tables:
+            - source: gs://etl-airflow-bigquery/export_flights.json
