@@ -4,6 +4,8 @@ version: 2
 
 seeds:
   - name: flights
+    files:
+      - path: gs://etl-airflow-bigquey/extract_flights_sample.csv
     columns:
       - name: date
         tests:
