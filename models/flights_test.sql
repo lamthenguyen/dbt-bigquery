@@ -1,28 +1,26 @@
-{{
-    config(
-        materialized="table",
-        destination_dataset="my_first_bigquery",
-        destination_table="flights",
-    )
-}}
+-- models/flights.sql
 
-with
-    source_data as (
-        select
-            `Date`,
-            `Code`,
-            `Number`,
-            `Origin`,
-            `Destination`,
-            `Departure Time`,
-            `Departure Delay`,
-            `Arrival Time`,
-            `Arrival Delay`,
-            `Flight Time`,
-            `Distance`,
-            `Record ID`
-        from `my-project-95615-388109.my_first_bigquery.flights`
-    )
+{{ config(
+    pre_hook="""
+        CREATE OR REPLACE TABLE `my_project.my_dataset.flights_test` AS
+        SELECT *
+        FROM `gs://etl-airflow-bigquey/flights.csv` AS t
+    """
+) }}
 
-select `Date`, `Code`, `Number`, `Origin`, `Destination`
-from source_data
+-- SQL statement for your flights model
+SELECT
+    Date,
+    Code,
+    Number,
+    Origin,
+    Destination,
+    Departure Time,
+    Departure Delay,
+    Arrival Time,
+    Arrival Delay,
+    Flight Time,
+    Distance,
+    Record Id
+FROM `my-project-95615-388109.my_first_bigquery.flights_test`
+
