@@ -12,18 +12,5 @@ seeds:
         allow_quoted_newlines: false
     tables:
       - name: flights
-        schema: my_schema
-        columns:
-          - name: Date
-          - name: Code
-          - name: Number
-          - name: Origin
-          - name: Destination
-          - name: "Departure Time"
-          - name: "Departure Delay"
-          - name: "Arrival Time"
-          - name: "Arrival Delay"
-          - name: "Flight Time"
-          - name: Distance
-          - name: "Record Id"
+        schema: flights
         location: gs://etl-airflow-bigquey/flights.csv
