@@ -19,11 +19,11 @@ seeds:
           - name: Number
           - name: Origin
           - name: Destination
-          - name: `Departure Time`
-          - name: `Departure Delay`
-          - name: `Arrival Time`
-          - name: `Arrival Delay`
-          - name: `Flight Time`
+          - name: "Departure Time"
+          - name: "Departure Delay"
+          - name: "Arrival Time"
+          - name: "Arrival Delay"
+          - name: "Flight Time"
           - name: Distance
-          - name: `Record Id`
+          - name: "Record Id"
         location: gs://etl-airflow-bigquey/flights.csv
