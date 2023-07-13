@@ -13,4 +13,4 @@ seeds:
     tables:
       - name: flights
         schema: my_schema
-        location: gs://my-bucket/flights.csv
+        location: gs://etl-airflow-bigquey/extract_flights_sample.csv
