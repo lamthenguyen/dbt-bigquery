@@ -9,4 +9,4 @@ sources:
         schema: my-project-95615-388109.my_first_bigquery
         source_data:
           tables:
-            - source: gs://etl-airflow-bigquery/export_flights.json
+            - source: gs://etl-airflow-bigquey/flights.csv
